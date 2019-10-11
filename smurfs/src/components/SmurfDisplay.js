@@ -3,10 +3,10 @@ import React from 'react'
 const SmurfDisplay = (props) => {
 
     return (
-        <div>
-            <p>Name: {props.name}</p>
-            <p>Age: {props.age}</p>
-            <p>Height:{props.height}</p>
+        <div className="displayWrap">
+            <p className="name">Name: {props.name}</p>
+            <p className="name">Age: {props.age}</p>
+            <p className="name">Height:{props.height}</p>
         </div>
     )
 }

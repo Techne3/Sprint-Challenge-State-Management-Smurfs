@@ -4,6 +4,9 @@ import axios from 'axios'
 export const START_FETCHING = 'START_FETCHING';
 export const FETCH_SUCCESS = 'FETCH_SUCCESS';
 export const FETCH_FAILURE = 'FETCH_FAILURE';
+export const CREATE_SMURF = 'CREATE_SMURF';
+export const CREATING_SMURF ='CREATING_SMURF';
+export const FAIL = 'FAIL';
 
 
 export const fetchFacts = () => dispatch => {
@@ -16,7 +19,8 @@ export const fetchFacts = () => dispatch => {
       .catch(err => dispatch({ type: FETCH_FAILURE, payload: err.response }));
       // dispatch({type: 'FETCH_SUCCESS', payload:res. data})
   };
-  
+
+
 
   // redux thunk
   const tunk = next => action => store=> {

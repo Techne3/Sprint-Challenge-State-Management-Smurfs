@@ -1,4 +1,4 @@
-import {START_FETCHING, FETCH_SUCCESS, FETCH_FAILURE} from '../actions'
+import {START_FETCHING, FETCH_SUCCESS, FETCH_FAILURE,CREATE_SMURF,CREATING_SMURF,CREATED_SMURF} from '../actions'
 
 
 const initialState = {
@@ -31,11 +31,6 @@ export const reducer = (state = initialState,   action) => {
                 isFetching: false,
                 error: action.payload
             };
-        // case ADD_SMURF:
-        //     // return {
-        //     //     ...state,
-        //     //     []
-        //     // }
         default: 
         return state;
     }
