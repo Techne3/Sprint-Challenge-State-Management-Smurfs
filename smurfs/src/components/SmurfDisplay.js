@@ -6,7 +6,7 @@ const SmurfDisplay = (props) => {
         <div className="displayWrap">
             <p className="name">Name: {props.name}</p>
             <p className="name">Age: {props.age}</p>
-            <p className="name">Height:{props.height}</p>
+            <p className="name">Height: {props.height}</p>
         </div>
     )
 }
